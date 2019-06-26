@@ -1,0 +1,10 @@
+
+<ul *ngIf = "user">
+        <li>
+            <img [src]="user.data.avatar">
+            <h1>Name: {{ user.data.first_name}} {{ user.data.last_name}}</h1>
+            <h2>E-mail: {{ user.data.email}}</h2>
+            <h3>ID: {{ user.data.id}}</h3>
+        </li>
+        </ul>
+<button (click)="back()">Back</button>
